@@ -1,0 +1,101 @@
+site_name: edev
+site_url: https://1xev3.github.io
+site_author: 1xev3
+site_description: Wiki for my addons
+repo_url: https://github.com/1xev3/1xev3.github.io
+copyright: "onexevs@gmail.com"
+
+#plugins
+plugins:
+  - macros
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+
+theme:
+  name: material
+  
+  features:
+    - content.code.select
+    - content.code.annotate
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    # - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    # - navigation.instant.prefetch
+    - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    # - toc.follow
+    - toc.integrate
+    
+
+  palette:
+    - scheme: default
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+
+  nav:
+    - Home: index.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - tables
+  - attr_list
+  - md_in_html
+  
+
+extra:
+  types:
+    string: "[string](https://wiki.facepunch.com/gmod/string)"
+    function: "[function](https://wiki.facepunch.com/gmod/function)"
+    bool: "[bool](https://wiki.facepunch.com/gmod/boolean)"
+    number: "[number](https://wiki.facepunch.com/gmod/number)"
+    panel: "[panel](https://wiki.facepunch.com/gmod/Panel)"
+    table: "[table](https://wiki.facepunch.com/gmod/table)"
+    color: "[color](https://wiki.facepunch.com/gmod/Global.Color)"
+    material: "[material](https://wiki.facepunch.com/gmod/IMaterial)"
+    text_align: "[text_align_enum](https://wiki.facepunch.com/gmod/Enums/TEXT_ALIGN)"
+
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/1xev3/1xev3.github.io
+    - icon: fontawesome/solid/store
+      link: https://www.gmodstore.com/users/76561198123505655
+    - icon: fontawesome/brands/steam
+      link: https://steamcommunity.com/id/onexev/
