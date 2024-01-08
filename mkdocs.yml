@@ -3,7 +3,7 @@ site_url: https://1xev3.github.io
 site_author: 1xev3
 site_description: Wiki for my addons
 repo_url: https://github.com/1xev3/1xev3.github.io
-copyright: "onexevs@gmail.com"
+copyright: onexevs@gmail.com
 
 #plugins
 plugins:
